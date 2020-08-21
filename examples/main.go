@@ -9,7 +9,7 @@ import (
 	"strconv"
 
 	"github.com/go-gomail/gomail"
-	"github.com/ng28/hermes/v2"
+	"github.com/ng28/hermes/v3"
 	"golang.org/x/crypto/ssh/terminal"
 )
 

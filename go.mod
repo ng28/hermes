@@ -1,4 +1,4 @@
-module github.com/ng28/hermes/v2
+module github.com/ng28/hermes/v3
 
 require (
 	github.com/Masterminds/semver v1.4.2 // indirect
