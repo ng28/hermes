@@ -3,13 +3,14 @@ package main
 import (
 	"errors"
 	"fmt"
-	"github.com/go-gomail/gomail"
-	"github.com/matcornic/hermes/v2"
-	"golang.org/x/crypto/ssh/terminal"
 	"io/ioutil"
 	"net/mail"
 	"os"
 	"strconv"
+
+	"github.com/go-gomail/gomail"
+	"github.com/ng28/hermes/v2"
+	"golang.org/x/crypto/ssh/terminal"
 )
 
 type example interface {
