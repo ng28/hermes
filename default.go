@@ -451,25 +451,6 @@ func (dt *Default) HTMLTemplate() string {
                       <br />
                       {{.Hermes.Product.Name}}
                     </p>
-
-                    {{ if (eq .Email.Body.FreeMarkdown "") }}
-                      {{ with .Email.Body.Actions }} 
-                        <table class="body-sub">
-                          <tbody>
-                              {{ range $action := . }}
-                                {{if $action.Button.Text}}
-                                <tr>
-                                  <td>
-                                    <p class="sub">{{$.Hermes.Product.TroubleText | replace "{ACTION}" $action.Button.Text}}</p>
-                                    <p class="sub"><a href="{{ $action.Button.Link }}">{{ $action.Button.Link }}</a></p>
-                                  </td>
-                                </tr>
-                                {{ end }}
-                              {{ end }}
-                          </tbody>
-                        </table>
-                      {{ end }}
-                    {{ end }}
                   </td>
                 </tr>
               </table>
